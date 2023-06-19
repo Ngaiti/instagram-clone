@@ -3,6 +3,7 @@ import IconButton from "./components/IconButton";
 import ProfileHeader from "./components/ProfileHeader";
 import { createContext } from "react";
 import { PROFILE_DATA } from "./data";
+import ImageGrid from "./components/ImageGrid";
 
 export const ProfileContext = createContext(null);
 
@@ -27,6 +28,7 @@ export default function App() {
         </Col>
         <Col sm={11}>
           <ProfileHeader />
+          <ImageGrid />
         </Col>
       </Row>
     </ProfileContext.Provider>
